@@ -1,5 +1,12 @@
 # Enterprise Multi-Agent Platform
 
+## Overview
+
+A small multi-agent example that splits a task across three roles: a planner, a worker and a critic. The agent runs behind a `POST /agent/run` endpoint, and none of the three roles writes to production. A versioned `/v1` ops API adds workspaces, tenant isolation, job approval and audit records, and tests cover both the agent and the ops layer.
+
+- **Built with:** Python, pytest, Docker Compose, GitHub Actions
+- **Scope:** Local laptop lab with tests; it does not call a hosted model or apply production changes.
+
 <!-- project-guide:start -->
 ## Project guide
 
